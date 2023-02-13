@@ -479,42 +479,39 @@ footer {
     }
 }
 @media (max-width: 768px) {
-    .home,
-    .about-me,
-    .experiences,
-    .briefcase,
-    .skills,
-    .contacto{
-        display: none;
-    }
     /* Menu responsive */
-    #despliegue .menu {
+    .despliegue .menu {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-right: 40px;
-        background-color: var(--dark_white);
+        background-color: var(--yellow);
         position: fixed;
-        top: 90px;
-        width: 100%;
+        border-radius: 20px;
+        top: 80px;
+        width: 90%;
         padding-top: 20px;
         padding-bottom: 20px;
-        height: 100%;
+        height: 80%;
         overflow-y: auto;
         z-index: 30;
         left: 100%;
         transition: 0.3s;
     }
     .list {
-        line-height: 60px;
+        padding-top: 60px;
+        line-height: 0;
     }
     .menu a {
-        font-size: 25px;
-        color: var(--yellow);
+        font-weight: bold;
+        font-size: 30px;
+        color: var(--ligth_blue);
         text-decoration: none;
     }
-    .deploy_menu_visible {
-        z-index: 40;
+    .menu a:hover {
+        font-size: 32px;
+    }
+    .despliegue .deploy_menu_visible {
         left: 0;
     }
     nav {
@@ -527,7 +524,7 @@ footer {
         border: none;
         background-color: transparent;
         padding-right: 60px;
-        padding-top: 60px;
+        padding-top: 20px;
         font-size: 50px;
     }
     .button_mobile :hover {
