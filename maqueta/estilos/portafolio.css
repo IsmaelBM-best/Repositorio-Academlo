@@ -1,0 +1,1220 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    --yellow: #F1A600;
+    --dark_blue: #1f1d2c;
+    --ligth_blue: #242635;
+    --dark_white: #e5e5e5;
+    --white: #ffffff;
+}
+nav {
+    height: 100px;
+    color: var(--dark_white);
+    background-color: var(--dark_blue);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+nav ul {
+    position: relative;  
+    z-index: 20;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-right: 60px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+.home {
+    color: var(--yellow);
+}
+.vector1 {
+    position: absolute;
+    background-color: var(--ligth_blue);
+    width: 360px;
+    height: 1060px;
+}
+
+/* Header */
+.header_container {
+    width: 100%;
+    color: var(--dark_white);
+    background-color: var(--dark_blue);
+    display: flex;
+    justify-content: center;
+    height: 519px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.first_header_container {
+    display: flex;
+    flex-direction: column;
+}
+.first_header_container h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--white);
+}
+.first_header_container p {
+    font-size: 20px;
+}
+.header_container .first_header_container {
+    padding-right: 100px;
+}
+.cinco  {
+    color: var(--yellow);
+}
+.second_header_container img {
+    position: relative;
+    z-index: 20;
+    width: 460px;
+}
+.icons_container {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+.icon a {
+    font-size: 35px;
+    color: var(--yellow);
+}
+
+/* main - article */
+.about_me {
+    background-color: var(--ligth_blue);
+    width: 100%;
+    height: 500px;
+}
+.about_me .acerca {
+    padding-top: 40px;
+    font-size: 35px;
+    color: var(--white);
+    text-align: center;
+}
+.about_me .lorem {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+    color: var(--dark_white);
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+}
+.images {
+    margin-top: 70px;
+    gap: 20%;
+    display: flex;
+    justify-content: center;
+}
+.images h2 {
+    padding-top: 20px;
+    text-align: center;
+    color: var(--white);
+}
+.images .academlo_title {
+    padding-top: 30px;
+}
+.images p {
+    text-align: center;
+    color: var(--dark_white);
+}
+/* section - expericence */
+.experience {
+    padding-top: 45px;
+    width: 100%;
+    height: 580px;
+    background-color: var(--dark_blue);
+}
+.experience .exp {
+    font-size: 30px;
+    text-align: center;
+    color: var(--white);
+}
+.all_icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--dark_white);
+    align-items: center;
+}
+
+/* AMAZON */
+.amazon {
+    padding-top: 20px;
+    display:flex;
+}
+.amazon .description_amazon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.amazon :nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+/* AIRBNB */
+.airbnb {
+    display: flex;
+}
+.airbnb .description_airbnb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.airbnb :nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+/* GOOGLE */
+.google {
+    display: flex;
+}
+.google .description_google {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+}
+.google :nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+/* section - 2 */
+.the-section-skills {
+    position: relative;
+    background-color: var(--dark_blue);
+    width: 100%;
+    height: 500px;
+}
+.vector2 {
+    position: absolute;
+    background-color: var(--ligth_blue);
+    width: 50%;
+    height: 500px;
+    z-index: 10;
+}
+.my-skills {
+    position: absolute;
+    z-index: 20;
+    padding-top: 40px;
+    color: var(--white);
+    display: flex;
+    padding-left: 38%;
+    font-size: 25px;
+}
+.first-percent {
+    position: absolute;
+    z-index: 20;
+    color: var(--dark_white);
+    display: flex;
+    padding-top: 130px;
+    padding-left: 200px;
+    gap: 60px;
+}
+.first-percent .nine-five {
+    color: var(--yellow);
+    font-size: 55px;
+}
+.first-percent p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+.second-percent {
+    position: absolute;
+    z-index: 20;
+    color: var(--dark_white);
+    display: flex;
+    padding-top: 210px;
+    padding-left: 200px;
+    gap: 60px;
+}
+.second-percent .seventy {
+    color: var(--yellow);
+    font-size: 55px;
+}
+.second-percent p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+.third-percent {
+    position: absolute;
+    z-index: 20;
+    color: var(--dark_white);
+    display: flex;
+    padding-left: 200px;
+    padding-top: 290px;
+    gap: 60px;
+}
+.third-percent .nine {
+    color: var(--yellow);
+    font-size: 55px;
+}
+.third-percent p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+.four-percent {
+    position: absolute;
+    z-index: 20;
+    color: var(--dark_white);
+    display: flex;
+    padding-top: 370px;
+    padding-left: 200px;
+    gap: 60px;
+}
+.four-percent .nine-zero {
+    color: var(--yellow);
+    font-size: 55px;
+}
+.four-percent p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* section-photos */
+.my-briefcase {
+    background-color: var(--dark_blue);
+    width: 100%;
+    height: 900px;
+}
+.my-briefcase .title-briefcase {
+    text-align: center;
+    color: var(--white);
+    padding-top: 40px;
+    font-size: 32px;
+}
+.photos {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    padding-top: 70px;
+    padding-left: 80px;
+}
+.first-vector {
+    margin-right: 20px;
+    width: 410px;
+    height: 280px;
+    background-color: var(--yellow);
+}
+.first-img {
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 400px;
+}
+.second-vector {
+    margin-right: 130px;
+    width: 420px;
+    height: 280px;
+    background-color: var(--ligth_blue);
+}
+.second-img {
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.third-vector {
+    margin-right: 20px;
+    margin-top: 100px;
+    width: 400px;
+    height: 270px;
+    background-color: var(--yellow);
+}
+.third-img {
+    padding-top: 20px;
+    padding-left: 12px;
+    width: 390px;
+}
+
+/* section-contact */
+.contact {
+    width: 100%;
+    height: 300px;
+    background-color: var(--ligth_blue);
+}
+.contact .contact-title {
+    text-align: center;
+    color: var(--white);
+    padding-top: 40px;
+}
+.telephone-and-mail {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 200px;
+}
+.telephone-and-mail h2 {
+    color: var(--white)
+}
+.telephone-and-mail p {
+    color: var(--dark_white);
+}
+.telephone-and-mail svg {
+    width: 80px;
+    height: 80px;
+}
+footer {
+    background-color: var(--dark_blue);
+    width: 100%;
+    height: 100px;
+    color: var(--white);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+@media (max-width: 940px) {
+    .header_container .first_header_container h1 {
+        font-size: 50px;
+    }
+    .header_container .first_header_container p {
+        font-size: 25px;
+    }
+    .photos {
+        padding-left: 10px;
+    }
+}
+@media (max-width: 860px) {
+    .photos {
+        padding-left: 40px;
+    }
+    .first-vector {
+        margin-right: 20px;
+        width: 340px;
+        height: 220px;
+        background-color: var(--yellow);
+    }
+    .first-img {
+        padding-left: 10px;
+        padding-top: 20px;
+        width: 320px;
+    }
+    .second-vector {
+        margin-right: 130px;
+        width: 370px;
+        height: 220px;
+        background-color: var(--ligth_blue);
+    }
+    .second-img {
+        width: 360px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .third-vector {
+        margin-right: 20px;
+        margin-top: 100px;
+        width: 360px;
+        height: 220px;
+        background-color: var(--yellow);
+    }
+    .third-img {
+        padding-top: 20px;
+        padding-left: 12px;
+        width: 340px;
+    }
+}
+@media (max-width: 800px) {
+    .first-vector {
+        margin-right: 20px;
+        width: 330px;
+        height: 220px;
+        background-color: var(--yellow);
+    }
+    .first-img {
+        padding-left: 10px;
+        padding-top: 20px;
+        width: 320px;
+    }
+    .second-vector {
+        margin-right: 130px;
+        width: 370px;
+        height: 220px;
+        background-color: var(--ligth_blue);
+    }
+    .second-img {
+        width: 340px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .third-vector {
+        margin-right: 20px;
+        margin-top: 100px;
+        width: 330px;
+        height: 220px;
+        background-color: var(--yellow);
+    }
+    .third-img {
+        padding-top: 20px;
+        padding-left: 12px;
+        width: 340px;
+    }
+}
+@media (max-width: 768px) {
+    .home,
+    .about-me,
+    .experiences,
+    .briefcase,
+    .skills,
+    .contacto{
+        display: none;
+    }
+    /* Menu responsive */
+    #despliegue .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 40px;
+        background-color: var(--dark_white);
+        position: fixed;
+        top: 90px;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 30;
+        left: 100%;
+        transition: 0.3s;
+    }
+    .list {
+        line-height: 60px;
+    }
+    .menu a {
+        font-size: 25px;
+        color: var(--yellow);
+        text-decoration: none;
+    }
+    .deploy_menu_visible {
+        z-index: 40;
+        left: 0;
+    }
+    nav {
+        height: 80px;
+    }
+    .button_mobile {
+        position: fixed;
+        z-index: 30;
+        color: var(--white);
+        border: none;
+        background-color: transparent;
+        padding-right: 60px;
+        padding-top: 60px;
+        font-size: 50px;
+    }
+    .button_mobile :hover {
+        font-size: 55px;
+        cursor: pointer;
+        color: var(--yellow);
+    }
+    .header_container {
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 800px;
+        padding-left: 27%;
+        gap: 40px;
+    }
+    .first_header_container {
+        z-index: 20;
+    }
+    .first_header_container p {
+        font-size: 40px;
+    }
+    .second_header_container img {
+        position: relative;
+        width: 400px;
+    }
+    .vector1 {
+        width: 450px;
+        height: 1300px;
+    }
+    .photos {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        gap: 100px;
+        padding-right: 50px;
+        padding-top: 40px;
+    }
+    .my-briefcase .title-briefcase {
+        font-size: 40px;
+    }
+    .my-briefcase {
+        height: 1400px;
+    }
+    .second-vector {
+        margin-right: 25px;
+    }
+    .third-vector {
+        margin-top: 5px;
+    }
+    .icons_container {
+        justify-content: center;
+    }
+    .about_me {
+        height: 880px;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .my-briefcase {
+        height: 1300px
+    }
+    .contact {
+        width: 100%;
+        height: 600px;
+        background-color: var(--ligth_blue);
+    }
+    .contact .contact-title {
+        font-size: 40px;
+        text-align: center;
+        color: var(--white);
+        padding-top: 40px;
+    }
+    .telephone-and-mail {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 60px;
+        gap: 100px;
+    }
+    .telephone-and-mail h2 {
+        text-align: center;
+        color: var(--white)
+    }
+    .telephone-and-mail p {
+        text-align: center;
+        color: var(--dark_white);
+    }
+    .telephone-and-mail svg {
+        margin-left: 38px;
+        width: 80px;
+        height: 80px;
+    }
+    footer {
+        background-color: var(--ligth_blue);
+    }
+}
+
+@media (max-width: 576px) { 
+    .button_mobile {
+        padding-right: 25px;
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    .header_container .first_header_container h1 {
+        font-size: 60px;
+    }
+    .header_container {
+        padding-left: 125px;
+        padding-right: 25px;
+    }
+    .header_container .second_header_container img {
+        width: 310px;
+    }
+    .vector1 {
+        width: 350px;
+    }
+    .about_me {
+        height: 820px;
+    }
+    .about_me .lorem {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .experience .exp {
+        font-size: 40px;
+    }
+    .all_icons svg {
+        width: 80px;
+    }
+    .all_icons .años {
+        padding-left: 40px;
+    }
+    .google .años {
+        padding-left: 20px;
+    }
+    .google {
+        padding-left: 35px;
+    }
+    .google .description_google {
+        padding-left: 40px;
+    }
+    .my-skills {
+        padding-left: 25%;
+    }
+    .the-section-skills{
+        height: 550px;
+    }
+    .vector2 {
+        width: 70%;
+        height: 550px;
+    }
+    .first-percent {
+        padding-top: 110px;
+        padding-left: 50px;
+    }
+    .second-percent {
+        padding-top: 215px;
+        padding-left: 50px;
+    }
+    .third-percent {
+        padding-left: 50px;
+        padding-top: 315px;
+    }
+    .four-percent {
+        padding-left: 50px;
+        padding-top: 420px;
+    }
+    .photos {
+        padding-left: 50px;
+    }
+    .contact .telephone-and-mail .phone {
+        width: 110px;
+        height: 110px;
+        margin-left: 20px;
+    }
+    .contact .telephone-and-mail .mail {
+        width: 110px;
+        height: 110px;
+        margin-left: 20px;
+    }
+    footer {
+        background-color: var(--ligth_blue);
+    }
+}
+
+@media (max-width: 434px) {
+    nav {
+        height: 10px;
+    }
+    .button_mobile {
+        font-size: 25px;
+        padding-top: 50px;
+        padding-right: 15px;
+    }
+    .header_container {
+        padding-left: 60px;
+        height: 600px;
+    }
+    .header_container .first_header_container {
+        padding-right: 0;
+    }
+    .header_container .first_header_container :nth-child(1) {
+        font-size: 40px;
+    }
+    .icons_container {
+        gap: 20px;
+    }
+    .header_container .second_header_container :nth-child(1) {
+        width: 200px;
+    }
+    .icons_container .icon :nth-child(1) {
+        font-size: 37px;
+    }
+    nav :nth-child(2) {
+        width: 200px;
+        height: 920px;
+    }
+    .header_container .first_header_container h1 {
+        font-size: 30px;
+    }
+    .header_container .first_header_container p {
+        font-size: 15px;
+    }
+    .header_container .second_header_container img {
+        width: 150px;
+    }
+    .about_me {
+        height: 600px;
+    }
+    .about_me .lorem {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .images {
+        margin-top: 50px;
+        gap: 60px;
+    }
+    .uvm img {
+        width: 80px;
+    }
+    .uvm h2 {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .uvm :nth-child(3){
+        font-size: 12px;
+    }
+    .academlo_logo {
+        padding-left: 10px;
+    }
+    .academlo_logo img {
+        width: 80px;
+    }
+    .academlo_logo .academlo_title {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .academlo_logo :nth-child(3) {
+        font-size: 12px;
+    }
+    .experience {
+        height: 500px;
+    }
+    .all_icons svg {
+        width: 60px;
+    }
+    .all_icons {
+        padding-top: 0;
+        gap: 5px;
+    }
+    .amazon .description_amazon {
+        padding-left: 30px;
+    }
+    .airbnb .description_airbnb {
+        padding-left: 30px;
+    }
+    .google {
+        padding-left: 25px;
+    }
+    .google .description_google {
+        padding-left: 25px;
+    }
+    .description_amazon h2 {
+        font-size: 18px;
+    }
+    .description_amazon p {
+        font-size: 12px;
+    }
+    .description_airbnb h2 {
+        font-size: 18px;
+    }
+    .description_airbnb p {
+        font-size: 12px;
+    }
+    .description_google h2 {
+        font-size: 18px;
+    }
+    .description_google p {
+        font-size: 12px;
+    }
+    .años {
+        font-size: 18px;
+    }
+    .experience .exp {
+        font-size: 30px;
+    }
+    .the-section-skills {
+        height: 420px;
+    }
+    .vector2 {
+        height: 420px;
+    }
+    .my-skills {
+        padding-left: 50px;
+    }
+    .my-skills h2 {
+        font-size: 30px;
+    }
+    .first-percent .nine-five {
+        font-size: 40px;
+    }
+    .second-percent .seventy {
+        font-size: 40px;
+    }
+    .third-percent .nine {
+        font-size: 40px;
+    }
+    .four-percent .nine-zero {
+        font-size: 40px;
+    }
+    .first-percent {
+        gap: 40px;
+        padding-top: 100px;
+        padding-left: 30px;
+    }
+    .second-percent {
+        gap: 40px;
+        padding-top: 180px;
+        padding-left: 30px;
+    }
+    .third-percent {
+        gap: 40px;
+        padding-left: 30px;
+        padding-top: 255px;
+    }
+    .four-percent {
+        gap: 40px;
+        padding-left: 30px;
+        padding-top: 330px;
+    }
+    .first-percent .app-designer {
+        font-size: 15px;
+    }
+    .second-percent .motion {
+        font-size: 15px;
+    }
+    .third-percent .creation {
+        font-size: 15px;
+    }
+    .four-percent .gestion {
+        font-size: 15px;
+    }
+    .photos {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 50px;
+    }
+    .my-briefcase {
+        height: 900px;
+    }
+    .my-briefcase .title-briefcase {
+        font-size: 30px;
+    }
+    .photos .first-vector {
+        margin-right: 0;
+        width: 290px;
+        height: 200px;
+    }
+    .photos .second-vector {
+        padding-top: 10px;
+        margin-right: 0;
+        width: 290px;
+        height: 200px;
+    }
+    .photos .third-vector {
+        margin-right: 0;
+        width: 290px;
+        height: 200px;
+    }
+    .photos .first-img {
+        width: 280px;
+    }
+    .photos .second-img {
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 280px;
+    }
+    .photos .third-img {
+        width: 280px;
+    }
+    .contact {
+        height: 450px;
+    }
+    .telephone-and-mail {
+        padding-top: 30px;
+        gap: 50px;
+    }
+    .contact .contact-title {
+        font-size: 30px;
+    }
+    .contact .telephone-and-mail .phone {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+    }
+    .contact .telephone-and-mail .mail {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+    }
+    .telephone-and-mail .number {
+        font-size: 20px;
+    }
+    .telephone-and-mail .phone-number {
+        font-size: 15px;
+    }
+    .telephone-and-mail .email-title {
+        font-size: 20px;
+    }
+    .telephone-and-mail .mail-direction {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    nav {
+        height: 10px;
+    }
+    .button_mobile {
+        font-size: 25px;
+        padding-top: 50px;
+        padding-right: 15px;
+    }
+    .header_container {
+        padding-left: 60px;
+        height: 600px;
+    }
+    .header_container .first_header_container {
+        padding-right: 0;
+    }
+    .header_container .first_header_container :nth-child(1) {
+        font-size: 40px;
+    }
+    .icons_container {
+        gap: 20px;
+    }
+    .header_container .second_header_container :nth-child(1) {
+        width: 200px;
+    }
+    .icons_container .icon :nth-child(1) {
+        font-size: 37px;
+    }
+    nav :nth-child(2) {
+        width: 200px;
+        height: 920px;
+    }
+    .header_container .first_header_container h1 {
+        font-size: 30px;
+    }
+    .header_container .first_header_container p {
+        font-size: 15px;
+    }
+    .header_container .second_header_container img {
+        width: 150px;
+    }
+    .about_me {
+        height: 600px;
+    }
+    .about_me .lorem {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .images {
+        margin-top: 50px;
+        gap: 60px;
+    }
+    .uvm img {
+        width: 80px;
+    }
+    .uvm h2 {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .uvm :nth-child(3){
+        font-size: 12px;
+    }
+    .academlo_logo {
+        padding-left: 10px;
+    }
+    .academlo_logo img {
+        width: 80px;
+    }
+    .academlo_logo .academlo_title {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .academlo_logo :nth-child(3) {
+        font-size: 12px;
+    }
+    .experience {
+        height: 500px;
+    }
+    .all_icons svg {
+        width: 60px;
+    }
+    .all_icons {
+        padding-top: 0;
+        gap: 5px;
+    }
+    .amazon .description_amazon {
+        padding-left: 30px;
+    }
+    .airbnb .description_airbnb {
+        padding-left: 30px;
+    }
+    .google {
+        padding-left: 25px;
+    }
+    .google .description_google {
+        padding-left: 25px;
+    }
+    .description_amazon h2 {
+        font-size: 18px;
+    }
+    .description_amazon p {
+        font-size: 12px;
+    }
+    .description_airbnb h2 {
+        font-size: 18px;
+    }
+    .description_airbnb p {
+        font-size: 12px;
+    }
+    .description_google h2 {
+        font-size: 18px;
+    }
+    .description_google p {
+        font-size: 12px;
+    }
+    .años {
+        font-size: 18px;
+    }
+    .experience .exp {
+        font-size: 30px;
+    }
+    .the-section-skills {
+        height: 420px;
+    }
+    .vector2 {
+        height: 420px;
+    }
+    .my-skills {
+        padding-left: 50px;
+    }
+    .my-skills h2 {
+        font-size: 30px;
+    }
+    .first-percent .nine-five {
+        font-size: 40px;
+    }
+    .second-percent .seventy {
+        font-size: 40px;
+    }
+    .third-percent .nine {
+        font-size: 40px;
+    }
+    .four-percent .nine-zero {
+        font-size: 40px;
+    }
+    .first-percent {
+        gap: 40px;
+        padding-top: 100px;
+        padding-left: 30px;
+    }
+    .second-percent {
+        gap: 40px;
+        padding-top: 180px;
+        padding-left: 30px;
+    }
+    .third-percent {
+        gap: 40px;
+        padding-left: 30px;
+        padding-top: 255px;
+    }
+    .four-percent {
+        gap: 40px;
+        padding-left: 30px;
+        padding-top: 330px;
+    }
+    .first-percent .app-designer {
+        font-size: 15px;
+    }
+    .second-percent .motion {
+        font-size: 15px;
+    }
+    .third-percent .creation {
+        font-size: 15px;
+    }
+    .four-percent .gestion {
+        font-size: 15px;
+    }
+    .photos {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 50px;
+    }
+    .my-briefcase {
+        height: 900px;
+    }
+    .my-briefcase .title-briefcase {
+        font-size: 30px;
+    }
+    .photos .first-vector {
+        margin-right: 0;
+        width: 290px;
+        height: 200px;
+    }
+    .photos .second-vector {
+        padding-top: 10px;
+        margin-right: 0;
+        width: 290px;
+        height: 200px;
+    }
+    .photos .third-vector {
+        margin-right: 0;
+        width: 290px;
+        height: 200px;
+    }
+    .photos .first-img {
+        width: 280px;
+    }
+    .photos .second-img {
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 280px;
+    }
+    .photos .third-img {
+        width: 280px;
+    }
+    .contact {
+        height: 450px;
+    }
+    .telephone-and-mail {
+        padding-top: 30px;
+        gap: 50px;
+    }
+    .contact .contact-title {
+        font-size: 30px;
+    }
+    .contact .telephone-and-mail .phone {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+    }
+    .contact .telephone-and-mail .mail {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+    }
+    .telephone-and-mail .number {
+        font-size: 20px;
+    }
+    .telephone-and-mail .phone-number {
+        font-size: 15px;
+    }
+    .telephone-and-mail .email-title {
+        font-size: 20px;
+    }
+    .telephone-and-mail .mail-direction {
+        font-size: 15px;
+    }
+}
