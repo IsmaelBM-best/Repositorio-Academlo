@@ -1,5 +1,3 @@
-
-
 const navToggle = document.querySelector(".button_mobile")
 const navMenu = document.querySelector(".menu")
 
