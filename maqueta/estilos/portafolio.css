@@ -43,15 +43,17 @@ nav a {
     height: 40px;
     border: 2px;
     border-radius: 10px;
-    transition: border 1s ease, box-shadow 1s ease;
+    transition: border 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
 }
 .list:hover {
     border: 2px var(--yellow) solid;
     box-shadow: 0 1px 10px 2px #F1A600;
+    background-color: #f1a50085;
 }
 .list:active {
     border: 2px var(--white) solid;
     box-shadow: 0 1px 10px 2px var(--white);
+    background-color: #e5e5e56c;
 }
 .home {
     color: var(--yellow);
@@ -77,7 +79,6 @@ nav a {
 .first_header_container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 .first_header_container h1 {
     font-size: 48px;
@@ -102,24 +103,18 @@ nav a {
     background-color: #F1A600;
     color: #e5e5e5 ;
     border-radius: 10px;
-    transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.2s ease;
 }
-.cv:hover {
+.cv::hover {
     box-shadow: 0 2px 10px 5px;
 }
-.cv:active {
+.cv:hover {
     box-shadow: 0 0.5px 7px 3px;
 }
 .second_header_container img {
     position: relative;
     z-index: 20;
     width: 460px;
-    animation: bounce 3s infinite;
-}
-@keyframes bounce {
-    30% {
-        transform: translateY(20px);
-    }
 }
 .icons_container {
     display: flex;
@@ -129,7 +124,7 @@ nav a {
 .icon a {
     font-size: 35px;
     color: var(--yellow);
-    transition: font-size 0.2s ease;
+    transition: font-size 0.1s ease;
 }
 .icon a:hover {
     font-size: 40px;
@@ -150,7 +145,6 @@ nav a {
 .about_me .lorem {
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 20px;
     color: var(--dark_white);
     font-size: 16px;
     font-weight: 100;
@@ -160,13 +154,12 @@ nav a {
     animation: bounce 2s infinite;
 }
 @keyframes bounce {
-    30% {
+    50% {
         transform: translateY(20px);
     }
 }
 .images {
-    margin-top: 70px;
-    gap: 20%;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
@@ -308,29 +301,50 @@ nav a {
     padding-left: 10px;
     padding-top: 20px;
     width: 400px;
+    transition: transform 0.8s ease;
 }
 .second-vector {
     margin-right: 130px;
-    width: 420px;
+    width: 450px;
     height: 280px;
     background-color: var(--ligth_blue);
 }
 .second-img {
-    width: 400px;
+    width: 430px;
     padding-left: 20px;
     padding-top: 20px;
+    transition: transform 0.8s ease;
 }
 .third-vector {
     margin-right: 20px;
     margin-top: 100px;
     width: 400px;
-    height: 270px;
+    height: 250px;
     background-color: var(--yellow);
 }
 .third-img {
     padding-top: 20px;
-    padding-left: 12px;
+    padding-left: 10px;
     width: 390px;
+    transition: transform 0.8s ease;
+}
+.first-img:active {
+    width: 420px;
+}
+.second-img:active {
+    width: 450px;
+}
+.third-img:active {
+    width: 410px;
+}
+.first-img:hover {
+    transform: rotatey(180deg);
+}
+.second-img:hover {
+    transform: rotatey(180deg);
+}
+.third-img:hover {
+    transform: rotatey(180deg);
 }
 
 /* section-contact */
@@ -371,18 +385,37 @@ footer {
 }
 
 
-@media (max-width: 940px) {
+@media (max-width: 990px) {
     .header_container .first_header_container h1 {
         font-size: 50px;
     }
     .header_container .first_header_container p {
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .photos {
+        padding-left: 40px;
+    }
+    .second-img {
+        width: 420px;
+    }
+    .second-vector {
+        width: 400px;
     }
     .photos {
         padding-left: 10px;
     }
 }
 @media (max-width: 860px) {
+    .about_me .lorem {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .images {
+        margin-top: 20px;
+    }
+    nav ul {
+        gap: 5px;
+    }
     .photos {
         padding-left: 40px;
     }
@@ -463,12 +496,13 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 50px;
         margin-right: 40px;
         background-color: var(--yellow);
         position: fixed;
-        border-radius: 20px;
-        top: 80px;
-        width: 90%;
+        border-radius: 20px 0 20px 20px;
+        top: 70px;
+        width: 80%;
         padding-top: 20px;
         padding-bottom: 20px;
         height: 80%;
@@ -479,16 +513,24 @@ footer {
     }
     .list {
         padding-top: 60px;
-        line-height: 0;
     }
     .menu a {
+        text-align: center;
+        display: flex;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
         color: var(--ligth_blue);
         text-decoration: none;
     }
+    .menu .list:hover {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
     .menu a:hover {
-        font-size: 32px;
+        font-size: 22px;
+        background-color:#1c1a2793;
+        border-radius: 5px;
     }
     .despliegue .deploy_menu_visible {
         left: 0;
@@ -501,15 +543,17 @@ footer {
         z-index: 30;
         color: var(--white);
         border: none;
-        background-color: transparent;
-        padding-right: 60px;
-        padding-top: 20px;
+        background-color: var(--yellow);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        margin-top: 20px;
         font-size: 50px;
     }
-    .button_mobile :hover {
-        font-size: 55px;
+    .button_mobile:hover {
+        color: var(--ligth_blue);
         cursor: pointer;
-        color: var(--yellow);
     }
     .header_container {
         z-index: 20;
@@ -517,18 +561,23 @@ footer {
         flex-direction: column;
         justify-content: center;
         height: 800px;
-        padding-left: 27%;
+        padding-left: 18%;
+        text-align: center;
         gap: 40px;
     }
     .first_header_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         z-index: 20;
+        padding-left: 60px;
     }
     .first_header_container p {
         font-size: 40px;
     }
     .second_header_container img {
         position: relative;
-        width: 400px;
+        width: 350px;
     }
     .vector1 {
         width: 450px;
@@ -558,7 +607,8 @@ footer {
         justify-content: center;
     }
     .about_me {
-        height: 880px;
+        padding-top: 40px;
+        height: 600px;
     }
     .images {
         display: flex;
@@ -567,7 +617,7 @@ footer {
         gap: 100px;
     }
     .my-briefcase {
-        height: 1300px
+        height: 1100px
     }
     .contact {
         width: 100%;
@@ -596,9 +646,12 @@ footer {
         color: var(--dark_white);
     }
     .telephone-and-mail svg {
-        margin-left: 38px;
+        margin-left: 55px;
         width: 80px;
         height: 80px;
+    }
+    .telephone svg {
+        margin-right: 80px;
     }
     footer {
         background-color: var(--ligth_blue);
@@ -607,19 +660,29 @@ footer {
 
 @media (max-width: 576px) { 
     .button_mobile {
-        padding-right: 25px;
-        padding-top: 20px;
+        background-color: var(--yellow);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+        margin-top: 20px;
         font-size: 40px;
+    }
+    .first_header_container {
+        padding-left: 50px;
     }
     .header_container .first_header_container h1 {
         font-size: 60px;
+        justify-content: center;
+        text-align: center;
     }
     .header_container {
-        padding-left: 125px;
-        padding-right: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .header_container .second_header_container img {
-        width: 310px;
+        width: 300px;
     }
     .vector1 {
         width: 350px;
@@ -630,24 +693,6 @@ footer {
     .about_me .lorem {
         padding-left: 70px;
         padding-right: 70px;
-    }
-    .experience .exp {
-        font-size: 40px;
-    }
-    .all_icons svg {
-        width: 80px;
-    }
-    .all_icons .años {
-        padding-left: 40px;
-    }
-    .google .años {
-        padding-left: 20px;
-    }
-    .google {
-        padding-left: 35px;
-    }
-    .google .description_google {
-        padding-left: 40px;
     }
     .my-skills {
         padding-left: 25%;
@@ -678,16 +723,7 @@ footer {
     .photos {
         padding-left: 50px;
     }
-    .contact .telephone-and-mail .phone {
-        width: 110px;
-        height: 110px;
-        margin-left: 20px;
-    }
-    .contact .telephone-and-mail .mail {
-        width: 110px;
-        height: 110px;
-        margin-left: 20px;
-    }
+    
     footer {
         background-color: var(--ligth_blue);
     }
@@ -699,8 +735,15 @@ footer {
     }
     .button_mobile {
         font-size: 25px;
-        padding-top: 50px;
-        padding-right: 15px;
+        background-color: var(--yellow);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        margin-top: 80px;
+    }
+    .first_header_container {
+        padding-left: 0;
     }
     .header_container {
         padding-left: 60px;
@@ -735,7 +778,7 @@ footer {
         width: 150px;
     }
     .about_me {
-        height: 600px;
+        height: 480px;
     }
     .about_me .lorem {
         font-size: 12px;
@@ -745,16 +788,6 @@ footer {
     .images {
         margin-top: 50px;
         gap: 60px;
-    }
-    .uvm img {
-        width: 80px;
-    }
-    .uvm h2 {
-        padding-top: 10px;
-        font-size: 18px;
-    }
-    .uvm :nth-child(3){
-        font-size: 12px;
     }
     .academlo_logo {
         padding-left: 10px;
@@ -771,49 +804,6 @@ footer {
     }
     .experience {
         height: 500px;
-    }
-    .all_icons svg {
-        width: 60px;
-    }
-    .all_icons {
-        padding-top: 0;
-        gap: 5px;
-    }
-    .amazon .description_amazon {
-        padding-left: 30px;
-    }
-    .airbnb .description_airbnb {
-        padding-left: 30px;
-    }
-    .google {
-        padding-left: 25px;
-    }
-    .google .description_google {
-        padding-left: 25px;
-    }
-    .description_amazon h2 {
-        font-size: 18px;
-    }
-    .description_amazon p {
-        font-size: 12px;
-    }
-    .description_airbnb h2 {
-        font-size: 18px;
-    }
-    .description_airbnb p {
-        font-size: 12px;
-    }
-    .description_google h2 {
-        font-size: 18px;
-    }
-    .description_google p {
-        font-size: 12px;
-    }
-    .años {
-        font-size: 18px;
-    }
-    .experience .exp {
-        font-size: 30px;
     }
     .the-section-skills {
         height: 420px;
@@ -920,16 +910,7 @@ footer {
     .contact .contact-title {
         font-size: 30px;
     }
-    .contact .telephone-and-mail .phone {
-        width: 80px;
-        height: 80px;
-        margin-left: 20px;
-    }
-    .contact .telephone-and-mail .mail {
-        width: 80px;
-        height: 80px;
-        margin-left: 30px;
-    }
+    
     .telephone-and-mail .number {
         font-size: 20px;
     }
@@ -949,9 +930,13 @@ footer {
         height: 10px;
     }
     .button_mobile {
-        font-size: 25px;
-        padding-top: 50px;
-        padding-right: 15px;
+        font-size: 20px;
+        background-color: var(--yellow);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: 80px;
+        margin-right: 15px;
     }
     .header_container {
         padding-left: 60px;
@@ -986,7 +971,7 @@ footer {
         width: 150px;
     }
     .about_me {
-        height: 600px;
+        height: 530px;
     }
     .about_me .lorem {
         font-size: 12px;
@@ -996,16 +981,6 @@ footer {
     .images {
         margin-top: 50px;
         gap: 60px;
-    }
-    .uvm img {
-        width: 80px;
-    }
-    .uvm h2 {
-        padding-top: 10px;
-        font-size: 18px;
-    }
-    .uvm :nth-child(3){
-        font-size: 12px;
     }
     .academlo_logo {
         padding-left: 10px;
@@ -1029,39 +1004,6 @@ footer {
     .all_icons {
         padding-top: 0;
         gap: 5px;
-    }
-    .amazon .description_amazon {
-        padding-left: 30px;
-    }
-    .airbnb .description_airbnb {
-        padding-left: 30px;
-    }
-    .google {
-        padding-left: 25px;
-    }
-    .google .description_google {
-        padding-left: 25px;
-    }
-    .description_amazon h2 {
-        font-size: 18px;
-    }
-    .description_amazon p {
-        font-size: 12px;
-    }
-    .description_airbnb h2 {
-        font-size: 18px;
-    }
-    .description_airbnb p {
-        font-size: 12px;
-    }
-    .description_google h2 {
-        font-size: 18px;
-    }
-    .description_google p {
-        font-size: 12px;
-    }
-    .años {
-        font-size: 18px;
     }
     .experience .exp {
         font-size: 30px;
@@ -1170,16 +1112,6 @@ footer {
     }
     .contact .contact-title {
         font-size: 30px;
-    }
-    .contact .telephone-and-mail .phone {
-        width: 80px;
-        height: 80px;
-        margin-left: 20px;
-    }
-    .contact .telephone-and-mail .mail {
-        width: 80px;
-        height: 80px;
-        margin-left: 30px;
     }
     .telephone-and-mail .number {
         font-size: 20px;
