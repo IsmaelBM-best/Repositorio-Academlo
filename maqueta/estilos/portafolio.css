@@ -276,7 +276,7 @@ nav a {
 .my-briefcase {
     background-color: var(--dark_blue);
     width: 100%;
-    height: 900px;
+    height: 1100px;
 }
 .my-briefcase .title-briefcase {
     text-align: center;
@@ -287,45 +287,52 @@ nav a {
 .photos {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 50px;
     justify-items: center;
     padding-top: 70px;
-    padding-left: 80px;
+    padding-left: 60px;
 }
 .first-vector {
+    border-radius: 20px;
     margin-right: 20px;
     width: 410px;
-    height: 280px;
+    height: 370px;
     background-color: var(--yellow);
 }
 .first-img {
-    padding-left: 10px;
-    padding-top: 20px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 20px;
     width: 400px;
     transition: transform 0.8s ease;
 }
 .second-vector {
+    border-radius: 20px;
     margin-right: 130px;
     width: 450px;
-    height: 280px;
+    height: 380px;
     background-color: var(--ligth_blue);
 }
 .second-img {
+    border-radius: 20px;
     width: 430px;
-    padding-left: 20px;
-    padding-top: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
     transition: transform 0.8s ease;
 }
 .third-vector {
+    border-radius: 20px;
     margin-right: 20px;
-    margin-top: 100px;
+    margin-top: 40px;
     width: 400px;
-    height: 250px;
+    height: 390px;
     background-color: var(--yellow);
 }
 .third-img {
-    padding-top: 20px;
-    padding-left: 10px;
-    width: 390px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 8px;
+    width: 380px;
     transition: transform 0.8s ease;
 }
 .first-img:active {
@@ -345,6 +352,45 @@ nav a {
 }
 .third-img:hover {
     transform: rotatey(180deg);
+}
+/* images description */
+
+.title_pokedex {
+    color: rgb(255, 50, 50);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.p_pokedex {
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+.title_rick_morty {
+    text-align: center;
+    color: rgb(82, 255, 47);
+    padding-top: 10px;
+}
+.p_rick_morty {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.title_trivia {
+    color: rgb(0, 119, 255);
+    text-align: center;
+    padding-top: 10px;
+}
+.p_trivia {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* section-contact */
@@ -394,18 +440,27 @@ footer {
     }
     .photos {
         padding-left: 40px;
+        gap: 0;
+    }
+    .first-img {
+        width: 360px;
+        margin-left: 10px;
+    }
+    .first-vector {
+        width: 380px;
     }
     .second-img {
-        width: 420px;
+        width: 385px;
     }
     .second-vector {
-        width: 400px;
+        height: 340px;
+        width: 408px;
     }
-    .photos {
-        padding-left: 10px;
+    .third-vector {
+        margin-top: 80px;
     }
 }
-@media (max-width: 860px) {
+@media (max-width: 870px) {
     .about_me .lorem {
         padding-left: 100px;
         padding-right: 100px;
@@ -417,76 +472,42 @@ footer {
         gap: 5px;
     }
     .photos {
-        padding-left: 40px;
+        padding-left: 0px;
+        gap: 10px;
     }
     .first-vector {
         margin-right: 20px;
-        width: 340px;
-        height: 220px;
+        width: 320px;
+        height: 340px;
         background-color: var(--yellow);
     }
     .first-img {
-        padding-left: 10px;
-        padding-top: 20px;
-        width: 320px;
+        margin-left: 5px;
+        margin-top: 10px;
+        width: 310px;
     }
     .second-vector {
         margin-right: 130px;
-        width: 370px;
-        height: 220px;
+        width: 350px;
+        height: 330px;
         background-color: var(--ligth_blue);
     }
     .second-img {
-        width: 360px;
-        padding-left: 20px;
-        padding-top: 20px;
+        width: 330px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
     .third-vector {
+        margin-left: 20px;
         margin-right: 20px;
-        margin-top: 100px;
+        margin-top: 90px;
         width: 360px;
-        height: 220px;
+        height: 370px;
         background-color: var(--yellow);
     }
     .third-img {
-        padding-top: 20px;
-        padding-left: 12px;
-        width: 340px;
-    }
-}
-@media (max-width: 800px) {
-    .first-vector {
-        margin-right: 20px;
-        width: 330px;
-        height: 220px;
-        background-color: var(--yellow);
-    }
-    .first-img {
-        padding-left: 10px;
-        padding-top: 20px;
-        width: 320px;
-    }
-    .second-vector {
-        margin-right: 130px;
-        width: 370px;
-        height: 220px;
-        background-color: var(--ligth_blue);
-    }
-    .second-img {
-        width: 340px;
-        padding-left: 20px;
-        padding-top: 20px;
-    }
-    .third-vector {
-        margin-right: 20px;
-        margin-top: 100px;
-        width: 330px;
-        height: 220px;
-        background-color: var(--yellow);
-    }
-    .third-img {
-        padding-top: 20px;
-        padding-left: 12px;
+        margin-top: 10px;
+        margin-left: 12px;
         width: 340px;
     }
 }
@@ -584,11 +605,11 @@ footer {
         height: 1300px;
     }
     .photos {
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
         justify-items: center;
-        gap: 100px;
-        padding-right: 50px;
+        align-items: center;
+        gap: 80px;
         padding-top: 40px;
     }
     .my-briefcase .title-briefcase {
@@ -615,9 +636,6 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 100px;
-    }
-    .my-briefcase {
-        height: 1100px
     }
     .contact {
         width: 100%;
@@ -720,10 +738,6 @@ footer {
         padding-left: 50px;
         padding-top: 420px;
     }
-    .photos {
-        padding-left: 50px;
-    }
-    
     footer {
         background-color: var(--ligth_blue);
     }
@@ -863,12 +877,10 @@ footer {
     }
     .photos {
         padding-top: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
-        gap: 50px;
+        gap: 100px;
     }
     .my-briefcase {
-        height: 900px;
+        height: 1400px;
     }
     .my-briefcase .title-briefcase {
         font-size: 30px;
@@ -876,29 +888,30 @@ footer {
     .photos .first-vector {
         margin-right: 0;
         width: 290px;
-        height: 200px;
+        height: 330px;
+    }
+    .photos .first-img {
+        width: 280px;
     }
     .photos .second-vector {
         padding-top: 10px;
         margin-right: 0;
         width: 290px;
-        height: 200px;
+        height: 340px;
+    }
+    .photos .second-img {
+        padding-left: 0px;
+        padding-top: 10px;
+        width: 270px;
     }
     .photos .third-vector {
         margin-right: 0;
         width: 290px;
-        height: 200px;
-    }
-    .photos .first-img {
-        width: 280px;
-    }
-    .photos .second-img {
-        padding-left: 10px;
-        padding-top: 10px;
-        width: 280px;
+        height: 350px;
     }
     .photos .third-img {
         width: 280px;
+        margin-left: 5px;
     }
     .contact {
         height: 450px;
@@ -925,7 +938,7 @@ footer {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
     nav {
         height: 10px;
     }
@@ -1066,12 +1079,10 @@ footer {
     }
     .photos {
         padding-top: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
         gap: 50px;
     }
     .my-briefcase {
-        height: 900px;
+        height: 1300px;
     }
     .my-briefcase .title-briefcase {
         font-size: 30px;
@@ -1079,18 +1090,18 @@ footer {
     .photos .first-vector {
         margin-right: 0;
         width: 290px;
-        height: 200px;
+        height: 330px;
     }
     .photos .second-vector {
         padding-top: 10px;
         margin-right: 0;
         width: 290px;
-        height: 200px;
+        height: 340px;
     }
     .photos .third-vector {
         margin-right: 0;
         width: 290px;
-        height: 200px;
+        height: 340px;
     }
     .photos .first-img {
         width: 280px;
